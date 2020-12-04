@@ -114,7 +114,7 @@ class SwitchAQ2(XiaomiQuickInitDevice):
         },
         (QUINTUPLE_PRESS, TURN_ON): {
             COMMAND: COMMAND_ATTRIBUTE_UPDATED,
-            CLUSTER_ID: 6,
+            CLUSTER_ID: 0,
             ENDPOINT_ID: 1,
             ARGS: {ATTRIBUTE_ID: 5, ATTRIBUTE_NAME: "model", VALUE: "lumi.sensor_switch.aq2"},
         }
