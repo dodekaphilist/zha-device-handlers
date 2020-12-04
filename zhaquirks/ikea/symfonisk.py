@@ -38,7 +38,7 @@ from ..const import (
 )
 
 ROTATED = "device_rotated"
-
+ROTATION_STOPPED = "device_rotation_stopped"
 
 class IkeaSYMFONISK(CustomDevice):
     """Custom device representing IKEA of Sweden TRADFRI remote control."""
@@ -113,6 +113,11 @@ class IkeaSYMFONISK(CustomDevice):
             CLUSTER_ID: 8,
             ENDPOINT_ID: 1,
             ARGS: [1, 195],
+        },
+        (ROTATION_STOPPED): {
+            COMMAND: COMMAND_STOP,
+            CLUSTER_ID: 8,
+            ENDPOINT_ID: 1,
         },
         (DOUBLE_PRESS, TURN_ON): {
             COMMAND: COMMAND_STEP,
